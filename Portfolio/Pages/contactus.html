@@ -1,0 +1,72 @@
+<html>
+    <!--
+    Name: Megan G 
+    Date Created: 11/8/19
+    Most recent revision:
+    -->
+	<head>
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<h1>Contact Us</h1>
+		<hr />
+		<p><a href="index.html">Home</a></p>
+		<hr />
+		<h2>Information Request</h2>
+		<form action="submit.html" method="POST">
+            <!-- Name label and textbox -->
+			<label for="name">Name:</label><br />
+			<input type="text" id="name" name="Name"><br />
+			<!-- Email address label and textbook -->
+			<label for="email">Email:</label><br />
+			<input type="text"id="email" name="email"><br /> 
+            <!-- Phone Number label and textbox -->
+			<label for="phone">Phone Number:</label><br />
+			<input type="text"id="phone" name="phone"><br />
+            
+			<!-- Dropdown menu -->
+			<label for="Reason for Inquiry">What would you like to know:</label><br />
+			<select id="reason" name="reason">
+				<option value="default" selected>--Select One--</option>
+				<option value="private party">Private Party (40 or less) </option>
+				<option value="feedback">Feedback (Anything at all, go right ahead) </option>
+				<option value="other">Other (What's on your beautiful mind?) </option>
+			</select>
+            <!-- Check list -->
+			<fieldset>
+			
+			<legend>Best day(s) to contact you:</legend><br />
+			<input type="checkbox" id="MonDay" name="days" value="monDay">
+			<label for="monDay">MonDay</label><br />
+			<input type="checkbox" id="TuesDay" name="days" value="TuesDay">
+			<label for="tuesDay">TuesDay</label><br />
+			<input type="checkbox" id="WednesDay" name="days" value="WednesDay">
+			<label for="wednesDay">WednesDay</label><br />
+			<input type="checkbox" id="ThursDay" name="days" value="ThursDay">
+			<label for="thursday">ThursDay</label><br />
+			<input type="checkbox" id="FriDay" name="days" value="FriDay">
+			<label for="friDay">FriDay</label><br />
+			</fieldset>
+            <!-- Radio buttons -->
+			<fieldset>
+			<legend>Have you been to the restaurant?</legend><br />
+			<input type="radio" id="choice1" name="questionnaire" value="yes">
+			<label for="choice1">Yes</label><br />
+			<input type="radio" id="choice2" name="questionnaire" value="no">
+			<label for="choice2">No</label><br />
+			</fieldset>
+            <!-- Textarea -->
+			<label for="info">Additional Information</label><br />
+			<textarea id="info"></textarea><br />
+            <!-- Send Request button -->
+			 <div class="mailformsubmitcell">
+                    <input type="submit" name="ctl29$mf1$btnSubmit" value="Send Request" id="btnSubmit" class="mailformsubmitbutton" />
+                </div>
+            </div>
+		</form>
+		<hr />
+		<footer> <!-- The footer is a block at the bottom of each page. -->
+	<p>Dandridge Avenue, Louisville, Kentucky, 40204. Phone: 502-500-5025  @All rights reserved.</p>
+</footer>
+	</body>
+</html>

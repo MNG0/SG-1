@@ -1,0 +1,114 @@
+<html>
+    <!--
+    Name: Megan G 
+    Date Created: 11/8/19
+    Most recent revision:
+    -->
+	<head><html lang="en">
+<head> 
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<title>Contact Us</title>
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<style>
+</head> 
+                    
+/* navigation buttons */
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px 20px;
+    width: 100px;
+    float:left;
+}
+
+nav a:visited {
+    color: #e4c3ad; 
+}
+
+nav a:hover {
+background-color: #fef9ff;
+    color: #5b7d87; 
+}
+
+nav a:active {
+    font-weight: bold;
+	}
+
+</style>
+	</head>
+	<body>
+		<h1>Contact Us</h1>
+		<nav> <!-- The nav element will include navigation buttons or links -->
+    <ul>
+    <li><a href="index.html">Home</a></li>
+	<li><a href="menu.html">Menu</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+	</nav>
+		<h2>Information Request</h2>
+		<form action="submit.html" method="POST">
+            <!-- Name label and textbox -->
+			<label for="name"><b>Name:</label></b><br />
+			<input type="text" id="name" name="Name"><br />
+			<!-- Email address label and textbook -->
+			<label for="email"><b>Email:</label></b><br />
+			<input type="text"id="email" name="email"><br /> 
+            <!-- Phone Number label and textbox -->
+			<label for="phone"><b>Phone Number:</label></b><br />
+			<input type="text"id="phone" name="phone"><br />
+            
+			<!-- Dropdown menu -->
+			<label for="Reason for Inquiry"><b>What would you like to know:</label></b><br />
+			<select id="reason" name="reason">
+				<option value="default" selected>--Select One--</option>
+				<option value="private party">Private Party (40 or less) </option>
+				<option value="feedback">Feedback (Anything at all, go right ahead) </option>
+				<option value="other">Other (What's on your beautiful mind?) </option>
+			</select>
+            <!-- Check list -->
+			<fieldset>
+			
+			<legend><b>Best day(s) to contact you:</legend></b><br />
+			<input type="checkbox" id="MonDay" name="days" value="monDay">
+			<label for="monDay">MonDay</label><br />
+			<input type="checkbox" id="TuesDay" name="days" value="TuesDay">
+			<label for="tuesDay">TuesDay</label><br />
+			<input type="checkbox" id="WednesDay" name="days" value="WednesDay">
+			<label for="wednesDay">WednesDay</label><br />
+			<input type="checkbox" id="ThursDay" name="days" value="ThursDay">
+			<label for="thursday">ThursDay</label><br />
+			<input type="checkbox" id="FriDay" name="days" value="FriDay">
+			<label for="friDay">FriDay</label><br />
+			</fieldset>
+            <!-- Radio buttons -->
+			<fieldset>
+			<legend>Have you been to the restaurant?</legend><br />
+			<input type="radio" id="choice1" name="questionnaire" value="yes">
+			<label for="choice1">Yes</label><br />
+			<input type="radio" id="choice2" name="questionnaire" value="no">
+			<label for="choice2">No</label><br />
+			</fieldset>
+            <!-- Textarea -->
+			<label for="info">Additional Information</label><br />
+			<textarea id="info"></textarea><br />
+            <!-- Send Request button -->
+			 <div class="mailformsubmitcell">
+                    <input type="submit" name="ctl29$mf1$btnSubmit" value="Send Request" id="btnSubmit" class="mailformsubmitbutton" />
+                </div>
+            </div>
+		</form>
+		
+		<footer> <!-- The footer is a block at the bottom of each page. -->
+	<p>Dandridge Avenue, Louisville, Kentucky, 40204. Phone: 502-500-5025  @All rights reserved.</p>
+</footer>
+	</body>
+</html>
